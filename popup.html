@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Twitter Soup</title>
+    <style>
+    body {
+      overflow: hidden;
+      margin: 0px;
+      padding: 0px;
+      background: white;
+    }
+
+    div:first-child {
+      margin-top: 0px;
+    }
+
+    div {
+      cursor: pointer;
+      text-align: center;
+      padding: 1px 3px;
+      font-family: sans-serif;
+      font-size: 0.8em;
+      width: 100px;
+      margin-top: 1px;
+      background: #cccccc;
+    }
+    div:hover {
+      background: #aaaaaa;
+    }
+    #follow {
+      border: 1px solid red;
+      color: red;
+    }
+    #fav {
+      border: 1px solid yellow;
+      color: yellow;
+    }
+    #deny {
+      border: 1px solid blue;
+      color: blue;
+    }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div id="follow">Follow</div>
+    <div id="fav">Fav</div>
+    <div id="deny">Deny Following</div>
+  </body>
+</html>

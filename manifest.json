@@ -1,0 +1,14 @@
+{
+  "name": "Twitter Soup",
+  "description": "A tool for your happy Twitter life",
+  "version": "1.0",
+  "permissions": [
+    "tabs", "http://*/*", "https://*/*"
+  ],
+  "browser_action": {
+      "default_title": "Twitter Extension",
+      "default_icon": "mind.png",
+      "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
