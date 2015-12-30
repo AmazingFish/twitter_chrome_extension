@@ -8,8 +8,9 @@ function click(e) {
       target = '.js-follow-btn';
       break;
     case 'deny':
-      target = '.js-actionDeny'
-    default:
+      target = '.js-actionDeny';
+    case 'fb_like':
+      target = '.UFILikeLink';
   }
 
   chrome.tabs.executeScript(null,
