@@ -9,6 +9,7 @@ function click(e) {
       break;
     case 'deny':
       target = '.js-actionDeny';
+      break;
     case 'fb_like':
       target = '.UFILikeLink';
   }
@@ -16,7 +17,7 @@ function click(e) {
   chrome.tabs.executeScript(null,
       {code: "targetElem = document.querySelectorAll('"+target+"');for(var i = 0;i < targetElem.length; i++){targetElem[i].click();};"}
   );
-  window.close();
+  // window.close();
 }
 
 document.addEventListener('DOMContentLoaded', function () {
